@@ -1,5 +1,7 @@
 """
 单个字母计数,单个变量就可以实现,不用使用字典!!!
+
+New: 添加额外字符,保证遍历原始输入时不会发生溢出
 """
 class Solution:
     def countAndSay(self, n):
