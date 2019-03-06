@@ -13,7 +13,7 @@ public:
             // 当前字符匹配：相等，或者是模式是'0';
             if (*pattern == *str || (*pattern == '.' && *str != '\0')){
                 return matchCore(str,pattern+2) //模式中当前字符出现0次
-                    || matchCore(str+1,pattern+2) //模式中当前字符出现1次
+                    //|| matchCore(str+1,pattern+2) //模式中当前字符出现1次
                     || matchCore(str+1,pattern);//模式中当前字符出现若干次；
             }
             // 当前字符不匹配，但下一个字符是'*',跳过当前模式:ac ab*c;指向c和b
