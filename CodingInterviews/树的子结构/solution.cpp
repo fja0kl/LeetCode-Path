@@ -27,6 +27,7 @@ public:
         return result;
     }
     // 递归判断以pRoot1为根的树是否包含以pRoot2为根的树
+    // 递归终止条件：到达了树A或树B的叶子节点
     bool DoesTree1HaveTree2(TreeNode* pRoot1, TreeNode* pRoot2){
         // 终止条件：
         // pRoot2遍历完，符合条件
